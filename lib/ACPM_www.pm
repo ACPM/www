@@ -13,6 +13,8 @@ sub startup {
 
   # Normal route to controller
   $r->route('/welcome')->to('example#welcome');
+  
+  $r->route('/')->to( cb => sub { shift->render( template => 'index') } );
 }
 
 1;

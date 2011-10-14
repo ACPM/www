@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>
-			Atlantic City Perl Mongers | atlanticcity.pm.org
+			Atlantic City Perl Mongers | atlanticcity.pm.org <%= title() ? '| ' . title() : ''  %>
 		</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css' />
@@ -84,18 +84,7 @@
 					</div>
 					<div class="content-right">
 						<div class="container">
-							<h1 class="header">
-								A bacon man's dream...
-							</h1>
-							<p>
-								Fatback tenderloin pork ground round jerky chicken. Tail ground round meatball, beef ribs frankfurter ball tip drumstick chuck corned beef ribeye spare ribs venison ham boudin. Shankle pork belly corned beef short loin. Pork loin tongue flank salami spare ribs. Hamburger meatball tenderloin, meatloaf jowl short ribs leberkäse strip steak ball tip kielbasa venison beef ribs. Ground round corned beef beef ribs, bacon shoulder flank beef pastrami hamburger shankle fatback strip steak. Turkey shankle venison biltong spare ribs ham.
-							</p>
-							<p>
-								Hamburger jowl ham hock ham short loin prosciutto pork chop, spare ribs pig short ribs turducken leberkäse andouille. Shoulder fatback tail sirloin shank chuck. Salami drumstick t-bone, venison chuck bacon ribeye shank turkey. Spare ribs pork chop short ribs meatloaf, t-bone hamburger turkey pancetta biltong turducken tongue ribeye corned beef. Chuck beef ribs prosciutto tri-tip hamburger cow. Ground round capicola brisket sausage corned beef, bresaola flank. Pork belly ham bacon meatloaf, brisket rump strip steak kielbasa meatball ball tip swine shankle fatback beef ribs.
-							</p>
-							<p>
-								Hamburger jowl ham hock ham short loin prosciutto pork chop, spare ribs pig short ribs turducken leberkäse andouille. Shoulder fatback tail sirloin shank chuck. Salami drumstick t-bone, venison chuck bacon ribeye shank turkey. Spare ribs pork chop short ribs meatloaf, t-bone hamburger turkey pancetta biltong turducken tongue ribeye corned beef. Chuck beef ribs prosciutto tri-tip hamburger cow. Ground round capicola brisket sausage corned beef, bresaola flank. Pork belly ham bacon meatloaf, brisket rump strip steak kielbasa meatball ball tip swine shankle fatback beef ribs.
-							</p>
+                            <%= content %>
 						</div>
 					</div>
 				</div>
