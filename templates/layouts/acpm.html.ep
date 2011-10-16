@@ -17,15 +17,12 @@
 			<div class="top-container">
 				<div class="top">
 					<div class="logo">
-						<a href="#" title="Atlantic City Perl Mongers"><img src="images/logo.png" alt="Atlantic City Perl Mongers" style="border: 0px;" /></a>
+						<a href="/" title="Atlantic City Perl Mongers"><img src="images/logo.png" alt="Atlantic City Perl Mongers" style="border: 0px;" /></a>
 					</div>
 					<div class="main-nav">
 						<ul>
 							<li>
-								<a href="#" title="Go Home!">Home</a>
-							</li>
-							<li>
-								<a href="#" title="About Us">About Us</a>
+								<a href="/" title="Go Home!">Home</a>
 							</li>
 							<li>
 								<a href="#" title="Meetings">Meetings</a>
@@ -34,13 +31,10 @@
 								<a href="#" title="People">People</a>
 							</li>
 							<li>
-								<a href="#" title="Reviews">Reviews</a>
+								<a href="http://twitter.com/#!/acpm" title="Twitter">Twitter</a>
 							</li>
 							<li>
-								<a href="#" title="Advocacy">Advocacy</a>
-							</li>
-							<li>
-								<a href="#" title="Mailing List">Mailing List</a>
+								<a href="http://mail.pm.org/mailman/listinfo/atlanticcity-pm" title="Mailing List">Mailing List</a>
 							</li>
 						</ul>
 					</div>
@@ -51,7 +45,7 @@
 							Let's talk about <span class="blue"><em>perl</em></span>, baby!
 						</h1>
 						<h2>
-							Something witty can go here? Ice cream, strawberries, raspberries, chocolate milk and cookies.
+							Something witty can go here? Ice cream, strawberries, raspberries, cake, chocolate milk and cookies.
 						</h2>
 					</div>
 				</div><br />
@@ -62,7 +56,7 @@
 								When?
 							</h1>
 							<p>
-								Every second Saturday at 7:00 PM.
+								Every third Thursday at 7:00 PM.
 							</p>
 						</div>
 						<div class="container">
@@ -70,7 +64,9 @@
 								Where?
 							</h1>
 							<p>
-								In our secret Atlantic City hideout.
+								At the <a href="http://www.linode.com/">Linode</a> offices:<br/>
+                                329 E Jimmy Leeds Rd, Galloway, NJ<br/>
+                                <a href="http://g.co/maps/29pwn">Map</a>
 							</p>
 						</div>
 						<div class="container">
@@ -78,7 +74,7 @@
 								Why?
 							</h1>
 							<p>
-								There will be cake. mmm, cake.
+								To talk Perl, learn Perl, teach Perl.
 							</p>
 						</div>
 					</div>
@@ -92,11 +88,16 @@
 					<div class="footer-container">
 						<div class="footer-content">
 							<p class="left">
-								<a href="#">Home</a> | <a href="#">About Us</a>| <a href="#">Meetings</a> | <a href="#">People</a> | <a href="#">Reviews</a> | <a href="#">Advocacy</a> | <a href="#">Mailing List</a><br />
+                                    <a href="/" title="Go Home!">Home</a> |
+                                    <a href="#" title="Meetings">Meetings</a> |
+                                    <a href="#" title="People">People</a> |
+                                    <a href="http://twitter.com/#!/acpm" title="Twitter">Twitter</a> |
+                                    <a href="http://mail.pm.org/mailman/listinfo/atlanticcity-pm" title="Mailing List">Mailing List</a>
+                                    <br/>
 								© Copyright 2011 <a href="#">Atlantic City Perl Mongers</a>
 							</p>
 							<p class="right">
-								Powered by: <a href="#">Linode</a>, <a href="#">Mojolicious</a> and <a href="#">Perl</a><br />
+								Powered by: <a href="http://www.linode.com/">Linode</a>, <a href="http://mojolicio.us/">Mojolicious</a> and <a href="http://www.perl.org/">Perl</a><br />
 								We &hearts; Perl.
 							</p>
 						</div>
