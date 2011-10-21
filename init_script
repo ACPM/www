@@ -1,0 +1,54 @@
+#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          acpm_www
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts instance of acpm_www
+# Description:       starts instance of acpm_www using start-stop-daemon
+### END INIT INFO
+
+APP_PATH=/opt/acpm_www/script/acpm_www
+DAEMON=/usr/bin/hypnotoad
+DAEMON_CONF=/opt/acpm_www/hypnotoad.conf
+DAEMON_OPTS="--config ${DAEMON_CONF} ${APP_PATH}"
+DESC="acpm_www Server";
+
+PID_FILE=/var/run/acpm_www.pid
+
+test -x $DAEMON || exit 0
+
+set -e
+
+start() {
+    echo "Starting ${DESC}: ";
+    start-stop-daemon -q --start --pidfile ${PID_FILE} --exec ${DAEMON} -- ${DAEMON_OPTS};
+}
+
+stop() {
+    echo "Stopping $DESC: ";
+    start-stop-daemon -q --stop --signal QUIT --pidfile ${PID_FILE};
+}
+
+case "$1" in
+    start)
+        start;
+        ;;
+    stop)
+        stop
+        ;;
+
+    restart|force-reload)
+        stop;
+        sleep 1
+        start
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0
