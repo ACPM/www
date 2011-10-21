@@ -13,5 +13,3 @@
                             <p>
                                 Hamburger jowl ham hock ham short loin prosciutto pork chop, spare ribs pig short ribs turducken leberkäse andouille. Shoulder fatback tail sirloin shank chuck. Salami drumstick t-bone, venison chuck bacon ribeye shank turkey. Spare ribs pork chop short ribs meatloaf, t-bone hamburger turkey pancetta biltong turducken tongue ribeye corned beef. Chuck beef ribs prosciutto tri-tip hamburger cow. Ground round capicola brisket sausage corned beef, bresaola flank. Pork belly ham bacon meatloaf, brisket rump strip steak kielbasa meatball ball tip swine shankle fatback beef ribs.
                             </p>
-
-							<pre><%= dumper $links %></pre>
