@@ -1,10 +1,11 @@
 body{font-family:'Comfortaa', cursive;font-size:13px;color:#000;background-color:#fff;margin:0;padding:0;background: url('../images/grid.png');}
+body a{color:#4aa5ff;text-decoration:none;}
 html,body{height:100%;}
 .wrapper{min-height:100%;height:auto !important;margin:0 auto -130px;}
 .top-container{margin-bottom:15px;border-top:thick double #4aa5ff;padding:0;}
 .top{height:100px;position:relative;text-align:center;width:960px;overflow:hidden;border-bottom:1px solid #000;margin:0 auto;}
 .logo{float:left;overflow:hidden;width:300px;height:85px;margin:0 auto;padding:5px 0 0;}
-.main-nav{float:right;width:660px;color:#fff;font-family:'Comfortaa',curisve;text-align:left;padding:27px 0 0;}
+.main-nav{float:right;width:660px;color:#fff;font-family:'Comfortaa',curisve;text-align:right;padding:27px 0 0;}
 .main-nav ul li{list-style-type:none;display:inline;margin-right:15px;}
 .main-nav a{color:#6b6b6b;font-family:'Questrial', sans-serif;font-size:15px;font-weight:550;text-decoration:none;background:#dcdcdc; padding:6px;border-radius:5px;box-shadow: 0px 0px 5px #888;text-shadow: 0 0 3px #fff;}
 .main-nav a:hover{color:#4aa5ff;text-decoration:none;-webkit-transition: color 0.25s ease-in;-moz-transition: color 0.25s ease-in;-o-transition: color 0.25s ease-in;transition: color 0.25s ease-in;}
