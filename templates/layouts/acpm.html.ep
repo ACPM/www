@@ -21,21 +21,9 @@
 					</div>
 					<div class="main-nav">
 						<ul>
-							<li>
-								<a href="/" title="Go Home!">Home</a>
-							</li>
-							<li>
-								<a href="#" title="Meetings">Meetings</a>
-							</li>
-							<li>
-								<a href="#" title="People">People</a>
-							</li>
-							<li>
-								<a href="http://twitter.com/#!/acperlmongers" title="Twitter">Twitter</a>
-							</li>
-							<li>
-								<a href="http://mail.pm.org/mailman/listinfo/atlanticcity-pm" title="Mailing List">Mailing List</a>
-							</li>
+% for my $link (@$links) {
+							<li><a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a></li>
+% }
 						</ul>
 					</div>
 				</div>
@@ -45,7 +33,7 @@
 							Let's talk about <span class="blue"><em>perl</em></span>, baby!
 						</h1>
 						<h2>
-							Something witty can go here? Ice cream, strawberries, raspberries, cake, chocolate milk and cookies.
+							I don't know perl but somehow I made the links work. And you can too!
 						</h2>
 					</div>
 				</div><br />
@@ -88,11 +76,10 @@
 					<div class="footer-container">
 						<div class="footer-content">
 							<p class="left">
-                                    <a href="/" title="Go Home!">Home</a> |
-                                    <a href="#" title="Meetings">Meetings</a> |
-                                    <a href="#" title="People">People</a> |
-                                    <a href="http://twitter.com/#!/acpm" title="Twitter">Twitter</a> |
-                                    <a href="http://mail.pm.org/mailman/listinfo/atlanticcity-pm" title="Mailing List">Mailing List</a>
+% for my $link (@$links) {
+									|&nbsp;<a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a>
+% }
+									|
                                     <br/>
 								© Copyright 2011 <a href="#">Atlantic City Perl Mongers</a>
 							</p>
