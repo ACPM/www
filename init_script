@@ -10,8 +10,8 @@
 # Description:       starts instance of acpm_www using start-stop-daemon
 ### END INIT INFO
 
-APP_PATH=/opt/acpm_www/script/acpm_www
-DAEMON=/usr/bin/hypnotoad
+APP_PATH=/opt/acpm_www/script/a_c_p_m_www
+DAEMON=/usr/local/bin/hypnotoad
 DAEMON_CONF=/opt/acpm_www/hypnotoad.conf
 DAEMON_OPTS="--config ${DAEMON_CONF} ${APP_PATH}"
 DESC="acpm_www Server";
