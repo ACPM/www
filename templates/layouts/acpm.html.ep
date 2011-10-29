@@ -13,12 +13,17 @@
 		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css' />
 	</head>
 	<body>
+		
 		<div class="wrapper">
+			
 			<div class="top-container">
+			
 				<div class="top">
+					
 					<div class="logo">
 						<a href="/" title="Atlantic City Perl Mongers"><img src="images/logo.png" alt="Atlantic City Perl Mongers" style="border: 0px;" /></a>
 					</div>
+					
 					<div class="main-nav">
 						<ul>
 % for my $link (@$links) {
@@ -26,8 +31,11 @@
 % }
 						</ul>
 					</div>
-				</div>
+					
+				</div> <!-- /.top -->
+				
 				<div class="tagline-container">
+					
 					<div class="tagline">
 						<h1>
 							Let's talk about <span class="blue"><em>perl</em></span>, baby!
@@ -36,9 +44,13 @@
 							I don't know perl but somehow I made the links work. And you can too!
 						</h2>
 					</div>
-				</div><br />
+				
+				</div> <!-- /.tagline-container -->
+				
 				<div class="content">
+					
 					<div class="content-left">
+					
 						<div class="container">
 							<h1 class="header">
 								When?
@@ -47,10 +59,9 @@
 								Every third Thursday at 7:00 PM.
 							</p>
 						</div>
+					
 						<div class="container">
-							<h1 class="header">
-								Where?
-							</h1>
+							<h1 class="header">Where?</h1>
 							<p>
 								At the <a href="http://www.linode.com/">Linode</a> offices:<br/><br />
 				                                329 E. Jimmie Leeds Rd,<br/>
@@ -58,6 +69,7 @@
                                 				<a href="http://g.co/maps/29pwn">View Map &rarr;</a> 								
 							</p>
 						</div>
+						
 						<div class="container">
 							<h1 class="header">
 								Why?
@@ -66,39 +78,49 @@
 								To talk Perl, learn Perl, teach Perl.
 							</p>
 						</div>
-					</div>
+					
+					</div> <!-- /.content-left -->
+					
 					<div class="content-right">
 						<div class="container">
                             <%= content %>
 						</div>
 					</div>
-				</div>
-				<div class="footer-wide">
-					<div class="footer-container">
-						<div class="footer-content">
-							<p class="left">
+					
+				</div> <!-- /.content -->
+				
+			</div> <!-- /.top-container -->
+			
+			<div class="push"></div>
+			
+		</div> <!-- /.wrapper -->
+		
+		<div class="footer-wide">
+
+			<div class="footer-container">
+				<div class="footer-content">
+					<p class="left">
 % # prettier on the outside, still hacky on the inside :(
 % my $index = 0;
 % for my $link (@$links) {
 % 	if ($index == 0) {
-									<a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a>
+							<a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a>
 %	}
 %	else {
-									|&nbsp;<a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a>
+							|&nbsp;<a href="<%= $link->[1] %>" title="<%= $link->[0] %>"><%= $link->[0] %></a>
 %	}
 % $index++;
 % }
-                                    <br/>
-								© Copyright 2011 <a href="#">Atlantic City Perl Mongers</a>
-							</p>
-							<p class="right">
-								Powered by: <a href="http://www.linode.com/">Linode</a>, <a href="http://mojolicio.us/">Mojolicious</a> and <a href="http://www.perl.org/">Perl</a><br />
-								We &hearts; Perl.
-							</p>
-						</div>
-					</div>
+                               <br/>
+						© Copyright 2011 <a href="#">Atlantic City Perl Mongers</a>
+					</p>
+					<p class="right">
+						Powered by: <a href="http://www.linode.com/">Linode</a>, <a href="http://mojolicio.us/">Mojolicious</a> and <a href="http://www.perl.org/">Perl</a><br />
+						We &hearts; Perl.
+					</p>
 				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
