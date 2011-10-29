@@ -48,6 +48,7 @@ html,body {
 	height: 85px;
 	margin: 0 auto;
 	padding: 5px 0 0;
+	border: 0;
 }
 
 .main-nav {
